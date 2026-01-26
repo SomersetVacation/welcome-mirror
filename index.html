@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="refresh" content="120" />
   <title>Welcome</title>
+
   <style>
     :root{
       --bg:#000;
@@ -32,42 +33,90 @@
     }
 
     .card{
-      width: min(920px, 92vw);
+      width: min(980px, 94vw);
       border: 1px solid var(--border);
       border-radius: 20px;
-      padding: clamp(20px, 4vw, 44px);
+      padding: clamp(24px, 4vw, 48px);
       background: var(--card);
     }
 
     h1{
-      margin: 0 0 clamp(16px, 3vw, 28px);
+      margin: 0 0 clamp(18px, 3vw, 30px);
       font-size: clamp(42px, 5vw, 72px);
       line-height:1.1;
     }
 
-    .row{
-      margin: clamp(10px, 2vw, 18px) 0;
-      font-size: clamp(22px, 2.6vw, 36px);
-      line-height:1.25;
-      word-break: break-word;
+    .message{
+      font-size: clamp(20px, 2.4vw, 32px);
+      line-height: 1.45;
+      margin: 20px 0;
+      opacity: 0.95;
+    }
+
+    .message p{
+      margin: 14px 0;
+    }
+
+    .link{
+      margin-top: 20px;
+      font-size: clamp(18px, 2.2vw, 28px);
+    }
+
+    .link a{
+      color: #9fd4ff;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .link a:hover{
+      text-decoration: underline;
     }
 
     .footer{
-      margin-top: clamp(16px, 3vw, 28px);
-      font-size: clamp(16px, 2vw, 22px);
-      opacity:.85;
+      margin-top: clamp(22px, 3vw, 34px);
+      font-size: clamp(18px, 2vw, 24px);
+      opacity: .85;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div class="card">
       <h1>Welcome 👋</h1>
-      <div class="row"><strong>Guest:</strong> John &amp; Sarah</div>
-      <div class="row"><strong>Wi-Fi:</strong> SunshineStay</div>
-      <div class="row"><strong>Password:</strong> relax2025</div>
-      <div class="row"><strong>Checkout:</strong> 10:00 AM</div>
-      <div class="footer">Enjoy your stay 🌴</div>
+
+      <div class="message">
+        <p>
+          Thank you for booking our holiday house to chill and enjoy the dam
+          this upcoming long weekend.
+        </p>
+
+        <p>
+          Here are the instructions for the house. We will send you the code
+          for the key lock box latest at <strong>9:00 AM on your arrival day</strong>.
+        </p>
+
+        <p>
+          The house manual will also be provided as a printed version inside the house.
+        </p>
+
+        <div class="link">
+          📘 House Manual:<br>
+          <a href="https://app.box.com/s/83wgorf90f8tje2ekfyohpcy8gcly4yi">
+            https://app.box.com/s/83wgorf90f8tje2ekfyohpcy8gcly4yi
+          </a>
+        </div>
+
+        <p>
+          Any questions, please just message or call us on<br>
+          <strong>📞 0484&nbsp;624&nbsp;879</strong>
+        </p>
+      </div>
+
+      <div class="footer">
+        Enjoy your stay 🌴<br>
+        <strong>Ruth &amp; Michael</strong>
+      </div>
     </div>
   </div>
 </body>
